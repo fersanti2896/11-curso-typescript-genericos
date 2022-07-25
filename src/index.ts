@@ -1,7 +1,13 @@
-import Hero from "./classes/Hero";
-import powers from "./data/powers";
+import { printObject, genericFunction, genericFunctionArrow } from "./generics/generics";
 
-const hero = new Hero('Goku', 1, 35);
+// printObject( 123 );
+// printObject( new Date() );
+// printObject( { a:1, b:2, c:3 } );
+// printObject( [1, 2, 3, 4, 5, 6] );
+// printObject( 'Hola Mundo!' );
 
-console.log( hero.power );
-console.log( powers );
+console.log( genericFunction(3.1416).toFixed(2) );
+console.log( genericFunction('Hola mundo').toLocaleUpperCase() );
+console.log( genericFunction( new Date() ) );
+
+console.log( genericFunctionArrow('Fernando').toUpperCase() );
